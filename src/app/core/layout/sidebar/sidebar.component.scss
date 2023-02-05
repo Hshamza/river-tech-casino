@@ -1,0 +1,38 @@
+@import "@app/colors";
+
+.side-menu-wrapper {
+    margin-top: 55px;
+
+    .menu-item {
+        .nav {
+            flex-wrap: nowrap;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .menu-game {
+        padding-left: 3px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a.nav-link {
+        padding: 20px 15px;
+        display: block;
+        color: $white;
+
+        &.active {
+            background-color: $backgroundColor;
+        }
+
+        .fa {
+            padding: 8px;
+        }
+    }
+
+}

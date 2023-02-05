@@ -1,0 +1,50 @@
+@import "@app/colors";
+
+.filter-container {
+	display: flex;
+	justify-content: space-between;
+	width: calc(100% - 27px);
+	background: $white;
+	border-radius: 14px;
+	margin-bottom: 19px;
+	max-height: 90px;
+	padding: 15px 15px;
+	box-sizing: border-box;
+
+	.filter-items {
+		position: relative;
+
+		.input-group-text {
+			position: absolute;
+			cursor: pointer;
+			right: 16px;
+			top: 50%;
+			transform: translateY(-11px);
+		}
+	}
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+	padding: 6px;
+	margin-top: 0;
+	padding-bottom: 14px;
+}
+
+body .mat-form-field-appearance-fill .mat-form-field-flex {
+	background-color: $white;
+	border: 1px solid $filterBorderColor;
+	padding: 5px 15px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-infix {
+	padding: 0 10px;
+	padding-bottom: 6px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+	background-color: transparent;
+}
+
+body .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+	transform: translateY(-20%);
+}

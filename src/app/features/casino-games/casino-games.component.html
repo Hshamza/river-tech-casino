@@ -1,0 +1,20 @@
+<h1 class="app-home__title">All Games</h1>
+<div class="filter-container">
+	<form class="filter-items">
+		<app-input-text [label]="'Search Game'" [control]="searchGameForm"> </app-input-text>
+		<span *ngIf="searchGameForm?.value" class="input-group-text" (click)="onClearSearch()"><i
+				class="fa-light fa-xmark"></i></span>
+	</form>
+
+	<form>
+		<app-multi-dropdown [selectedOptions]="selectedProviderList" [options]="providersList"
+			[control]="providerGameForm" [isShowResetBtn]="true" [label]="'Search Providers'" ></app-multi-dropdown>
+	</form>
+
+</div>
+
+<div class="game-container" *ngIf="allFilteredGamesList && allFilteredGamesList.length !== 0">
+	<ng-container *ngFor="let game of allFilteredGamesList; trackBy:trackGame">
+		<app-game class="game-tile" [game]="game"> </app-game>
+	</ng-container>
+</div>

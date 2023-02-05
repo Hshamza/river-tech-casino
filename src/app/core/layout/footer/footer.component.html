@@ -1,0 +1,5 @@
+<div class="game-containers footer" *ngIf="lastPlayedGames.length !== 0">
+	<ng-container *ngFor="let game of lastPlayedGames; trackBy:trackGame">
+		<app-game class="game-tile" [game]="game" [isFooterGames]="true"> </app-game>
+	</ng-container>
+</div>

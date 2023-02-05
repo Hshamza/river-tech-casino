@@ -1,0 +1,11 @@
+@import "@app/mixins";
+@import "@app/colors";
+
+.page-not-found-wrapper {
+    text-align: center;
+
+    .error-message {
+        padding-bottom: 20px;
+        @include font($fontBold, 600, 32px, 36px)
+    }
+}

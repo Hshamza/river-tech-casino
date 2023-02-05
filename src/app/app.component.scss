@@ -1,0 +1,21 @@
+@import "@app/colors";
+
+
+.main-content {
+    display: flex;
+    min-height: calc(100vh - 120px);
+}
+
+.sidebar-wrapper {
+    flex: 200px;
+    background: $white;
+    max-width: 180px;
+    background-color: $sidebar-background-color;
+
+}
+
+.page-content-wrapper {
+    padding: 40px;
+    width: 100%;
+    background-color: $layoutBgColor;
+}

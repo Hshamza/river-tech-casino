@@ -1,0 +1,23 @@
+<div *ngIf="game" class="card game-item-card" [ngClass]="{'footer-game-card': isFooterGames}"
+    (click)="redirectToGame(game.slug)">
+    <div class="card-header">
+
+        <div class="game-status-wrapper">
+            <span class="game-title"> {{game.title}}</span>
+            <span class="game-provider">{{game.providerName}}</span>
+        </div>
+        <div class="card-body">
+            <div class="game-brand-img" [ngClass]="{'footer-game-tile': isFooterGames}">
+                <img class="img" [src]="game?.thumb?.url" alt="" appNoImage />
+            </div>
+
+            <div *ngIf="showButton" class="card-footer">
+                <i class="fas fa-thumbs-up"></i>
+                <button type="button" class="btn btn-primary btn-width-auto btn-round"
+                    (click)="playButton(game.startUrl)">Play for Fun
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

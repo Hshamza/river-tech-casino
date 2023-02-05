@@ -1,0 +1,9 @@
+<h1 class="app-home__title">Trending Games</h1>
+
+<h3 *ngIf="gameList && gameList.length == 0" class="no-results">No Trending Games Available !</h3>
+
+<div class="game-containers" *ngIf="gameList && gameList.length !== 0">
+	<ng-container *ngFor="let game of gameList; trackBy:trackGame">
+		<app-game class="game-tile" [game]="game"> </app-game>
+	</ng-container>
+</div>

@@ -1,0 +1,59 @@
+@import "@app/colors";
+@import "@app/mixins";
+
+.game-item-card {
+
+    float: left;
+    margin-right: 15px;
+    max-width: 100%;
+    width: 32%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: $boxShadowColor;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+    background-color: $white;
+
+    .game-status-wrapper {
+        .game-title {
+            display: block;
+            @include font($fontBold, 700, 14px, 20px);
+            color: $colorGrayShade;
+        }
+
+        .game-provider {
+            @include font($fontRegular, 400, 12px, 20px);
+            color: $textPrimary;
+        }
+    }
+
+    .game-brand-img {
+        margin-bottom: 15px;
+        height: 220px;
+        overflow: hidden;
+        min-width: 125px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .footer-game-tile {
+        height: 70px;
+    }
+
+    .card-footer {
+        .fas {
+            color: $sidebar-background-color;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.footer-game-card {
+    width: 19%;
+}

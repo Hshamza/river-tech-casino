@@ -1,0 +1,14 @@
+@import "@app/colors";
+
+.add-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+}
+
+.reset-btn {
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: $backgroundColor;
+    color: $white;
+    height: 25px;
+}

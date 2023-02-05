@@ -1,0 +1,32 @@
+@import "@app/colors";
+
+.application-header {
+    display: flex;
+    background: $header-background-color;
+    color: $white;
+    
+    .header-client-logo {
+        padding-left: 40px;
+        padding-top: 5px;
+
+        img {
+            height: 50px;
+        }
+    }
+
+    .fa-user {
+        font-size: 18px;
+    }
+
+    .header-user-name-wrapper {
+        margin-left: auto;
+        padding: 20px;
+        font-family: $fontRegular;
+    }
+
+    .header-user-logo {
+        padding: 20px;
+    }
+
+
+}
