@@ -1,0 +1,9 @@
+@import "./breakpoint.mixins";
+
+
+@mixin font($font, $weight, $size, $lineHeight) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+}

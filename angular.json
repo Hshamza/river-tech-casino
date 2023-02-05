@@ -65,13 +65,13 @@
 							"budgets": [
 								{
 									"type": "initial",
-									"maximumWarning": "500kb",
+									"maximumWarning": "1mb",
 									"maximumError": "1mb"
 								},
 								{
 									"type": "anyComponentStyle",
-									"maximumWarning": "2kb",
-									"maximumError": "4kb"
+									"maximumWarning": "10kb",
+									"maximumError": "20kb"
 								}
 							]
 						}
@@ -117,9 +117,7 @@
 					"options": {
 						"tsConfig": [
 							"tsconfig.app.json",
-							"tsconfig.spec.json",
-							// "e2e/tsconfig.json"
-						],
+							"tsconfig.spec.json"						],
 						"exclude": [
 							"**/node_modules/**"
 						]
